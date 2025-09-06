@@ -1,0 +1,108 @@
+.acerca-de {
+    display: flex;
+    justify-content: center;
+    
+    .grid {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1.7fr 2fr;
+        gap: clamp(20px, 3vw, 40px);
+
+        .col-1 {
+            .fotos{
+                display: flex;
+                justify-content: flex-end;
+                position: sticky;
+                top: 20px;
+                .foto {
+                    padding: 6px;
+                    border-radius: 10px;
+                    border: 1px solid var(--shade-3);
+                    .dark & {
+                        border: 1px solid var(--shade-8);
+                    }
+                    &:nth-child(1) {
+                        width: 80%;
+                    }
+
+                    &:nth-child(2) {
+                        width:40%;
+                        position: absolute;
+                        left: 0;
+                        bottom: -15%;
+                    }
+                }
+            }
+        }
+
+        .col-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+
+            .pre-titulo {
+                color:var(--primario);
+                font-weight: 600;
+                font-size: clamp(12px, 5vw, 16px);
+            }
+
+            .titulo {
+                font-size: clamp(18px, 2vw, 30px);
+                .dar & {
+                    color: var(--shade-3);
+                }
+            }
+
+            .resumen {
+                font-size: clamp(16px 2vw, 22px);
+                color: var(--shade-7);
+                line-height: 26px;
+                margin-bottom: 5px;
+                text-align: justify;
+
+                .dark & {
+                    color: var(--shade-5);
+                }
+            }
+
+        }
+    
+    }
+
+    @media screen and (max-width:600px) {
+        & {
+            .grid {
+                grid-template-columns: 1fr;
+
+                .col-1 {
+                    .fotos {
+                        margin-bottom: 60px;
+                        justify-content: center;
+
+                        .foto {
+                            &:nth-child(1) {
+                                width: 60%;
+                            }
+
+                              &:nth-child(2) {
+                                width: 40%;
+                                left: 55%;
+                                bottom: -35%;
+                            }
+                        }
+                    }
+                }
+
+                .col-2 {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    & :nth-child(6) {
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

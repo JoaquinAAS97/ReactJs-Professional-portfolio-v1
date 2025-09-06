@@ -1,0 +1,14 @@
+.clientes {
+    .logos {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .logo {
+            border-radius: 10px;
+            max-width:clamp(180px, 3vw, 200px);
+            width: 100%;
+        }
+    }
+}
