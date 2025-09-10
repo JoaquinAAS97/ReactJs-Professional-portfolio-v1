@@ -24,7 +24,6 @@
 
         input[type='radio'] {
             display: none;
-
             &:checked+.opcion {
                 /* busca al hermano html misma jerarquia dentro del padre cuya clase sea .opcion*/
                 background: var(--primario);
@@ -43,7 +42,7 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 40px 20px;
 
         @media screen and (max-width:768px) {
@@ -60,6 +59,8 @@
 
         .trabajo {
             .thumb {
+                max-height: 400px;
+                max-width: 600px;
                 width: 100%;
                 display: inline-block;
                 border: 5px;
@@ -89,7 +90,6 @@
                     color: var(--shade-10);
                     font-size: clamp(14px, 3vw, 16px);
                     font-weight: 600;
-                    margin-bottom: 5px;
 
                     .dark & {
                         color: var(--shade-2);
@@ -98,8 +98,16 @@
 
                 .categoria {
                     font-size: clamp(12px, 3vw, 14px);
-                    color: var(--shade-6);
+                    color: var(--shade-4);
+                    
+
+                    .dark & {
+                        color: var(--shade-4);
+                        font-weight: 500;
+                    }
                 }
+
+                 
 
                 .btn-ir {
                     background: none;

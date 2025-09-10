@@ -1,5 +1,5 @@
 import './Trabajos.css';
-import trabajos from '../data/Trabajos';
+import trabajos from '../data/trabajos';
 import { useState } from 'react';
 import Modal from '../Modal';
 
@@ -46,16 +46,12 @@ const Trabajos = () => {
             <section className="trabajos" id="trabajos">
                 <div className="encabezado">
                     <h3 className="titulo">Mis trabajos</h3>
-                    <p className="subtitulo">Estos son mis trabajos como desarrollador</p>
+                    <p className="subtitulo">Este es el resumen de mi experiencia laboral en el área TI</p>
                 </div>
                 <div className="filtros">
                     <label htmlFor="todos">
                         <input type="radio" name="categoria" id="todos" onChange={handleChange} checked={categoriaSeleccionada === 'todos'} />
-                        <span className="opcion">Todos</span>
-                    </label>
-                    <label htmlFor="diseño-web">
-                        <input type="radio" name="categoria" id="diseño-web" onChange={handleChange} checked={categoriaSeleccionada === 'diseño-web'} />
-                        <span className="opcion">Diseño-web</span>
+                        <span className="opcion">todos</span>
                     </label>
                     <label htmlFor="desarrollo-web">
                         <input type="radio" name="categoria" id="desarrollo-web" onChange={handleChange} checked={categoriaSeleccionada === 'desarrollo-web'} />
@@ -80,7 +76,7 @@ const Trabajos = () => {
                                 <div className="info">
                                     <div className="textos">
                                         <a href="#" className="nombre" onClick={(e) => openModal(e, trabajo.id)} >{trabajo.info.nombre}</a>
-                                        <p className="categoria" onClick={(e) => openModal(e, trabajo.id)} >{trabajo.categoria}</p>
+                                        <p className="categoria" onClick={(e) => openModal(e, trabajo.id)} >{trabajo.nombreProyecto}</p>
                                     </div>
                                     <a href="#" className="btn-ir" onClick={(e) => openModal(e, trabajo.id)}>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">

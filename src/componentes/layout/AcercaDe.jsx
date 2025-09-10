@@ -12,17 +12,25 @@ const AcercaDe = () => {
 						</div>
 					</div>
 					<div className="col-2">
-						<h4 className="pre-titulo">Acerca de Mí</h4>
-						<h3 className="titulo">La razón por la que deberías contratarme</h3>
+						<h4 className="pre-titulo">Acerca de Mí.</h4>
+						<h3 className="titulo">La razón por la que deberías contratarme.</h3>
 						<p className="resumen">
-							Hola! Soy Joaquín Astorga, tengo 28 años, soy Ingeniero de software y ciencias de datos. Me considero apasionado por el desarrollo de la IA,
-							desarrollo de apps web y móviles.
+							Soy Joaquín Astorga, ingeniero de software con especialización en ciencia de datos, titulado en 2024. Cuento con tres años de experiencia en desarrollo de software.
+							Me apasiona el avance tecnológico y me considero una persona autodidacta, en constante aprendizaje de nuevas tecnologías mediante cursos, libros y práctica
+
 						</p>
 						<p className="resumen">
-							Mi misión es contribuir al desarrollo de nuevas tecnologías para la resolución de problemas tanto en el rubro público como en el privado.
+							Mi trayectoria incluye la resolución de problemas y el desarrollo de productos de calidad.
+							He trabajado en software factories y consultoras TI, participando en proyectos con tecnologías modernas,
+							tanto en equipos de trabajo tradicionales como en metodologías ágiles.
+
 						</p>
 						<p className="resumen">
-							Mi visión es crear un impacto positivo y fructífero en la sociedad, a través de la creacion e implementación de nuevas tecnologías.
+							Además, poseo amplia experiencia en gestión y liderazgo de proyectos TI, así como en el desarrollo de aplicaciones web y móviles, ciencia de datos,
+							inteligencia artificial y en la creación de bots para la automatización de procesos.
+						</p>
+						<p className='resumen'>
+							Mi visión es generar un impacto positivo y duradero en la sociedad mediante la creación e implementación de nuevas tecnologías.
 						</p>
 						<a href="#contacto" className="boton">Mandame un mensaje
 							<span className="icono">

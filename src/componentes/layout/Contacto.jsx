@@ -57,8 +57,10 @@ const Contacto = () => {
         <>
             <section className="contacto" id="contacto">
                 <div className="encabezado">
-                    <h3 className="titulo">Hagamos tu idea una realidad</h3>
-                    <p className="subtitulo">Escríbeme y construyamos el negocio de tus sueños</p>
+                    <h3 className="titulo">Contáctame si te interesa...</h3>
+                    <p className="subtitulo">
+                        ...mi perfil o mis servicios profesionales. Puede hacerlo a través del siguiente formulario.
+                    </p>
                 </div>
                 <form action="https://formspree.io/f/mgvlvpkg" method='post' className='formulario' onSubmit={handleSubmit}>
                     <div className="grupo-formulario">
