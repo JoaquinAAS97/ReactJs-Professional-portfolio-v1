@@ -42,32 +42,31 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(2,1fr);
         gap: 40px 20px;
 
         @media screen and (max-width:768px) {
-            & {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media screen and (max-width:576px) {
             & {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
+        @media screen and (max-width:576px) {
+            & {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
         .trabajo {
             .thumb {
-                max-height: 400px;
-                max-width: 600px;
+                overflow: hidden;
+                max-height: 450px;
                 width: 100%;
                 display: inline-block;
                 border: 5px;
-                overflow: hidden;
                 margin-bottom: 10px;
-
                 img {
+                    height: 100%;
                     width: 100%;
                     vertical-align: top;
                     transform: scale(110%);

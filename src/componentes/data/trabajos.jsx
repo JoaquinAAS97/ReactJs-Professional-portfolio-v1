@@ -182,5 +182,46 @@ const trabajos = [
 			),
 		},
 	},
+	{
+		id: 6,
+		categoria: 'Desarrollo BOTs',
+		nombreProyecto: 'Desarrollo del Bot-Formularios E',
+		thumb: {
+			url: './assets/trabajos/bot-a.png',
+			alt: 'Trabajo 5',
+		},
+		info: {
+			nombre: 'Ministerio de Educación',
+			categoria: 'Desarrollo BOTs',
+			contenido: (
+				<>
+					<p>
+						Mi labor en esta institución fue automatizar e informatizar procesos del Departamento de Control y Gestión, de la división de DIPLAP - Ministerio
+						de Educación.
+					</p>
+
+					<img loading="lazy" src="./assets/trabajos/dipres.png" alt="" />
+
+					<p>
+						En este mini proyecto desarrollé un bot encargado de automatizar el proceso de digitalización y registro de antecedentes, 
+						población y recursos asignados a cada programa social inscrito en Dipres, a través de los formularios E 
+						de la Subsecretaría de Educación. Todo esto se realizó en el marco del proceso presupuestario 2024 y 2025.
+					</p>
+
+					<p>
+						<strong>Stack tecnológico implementado.</strong>
+						<br />
+					</p>
+					<ul>
+						<li><strong>Extracción de información:</strong> BeautifulSoup4</li>
+						<li><strong>Automatización y descarga de fuente de datos:</strong> Selenium for Python</li>
+						<li><strong>Exploración, limpieza y manipulación de datos:</strong> Python - pandas</li>
+						<li><strong>Creación de informe final:</strong> OpenPyXL, XLwings, FPDF</li>
+						<li><strong>Creación App Desk:</strong> Tkinter - CustomTkinter, python puro v3.10, Pathlib, threads y mulriprocess</li>
+					</ul>
+				</>
+			),
+		},
+	}
 ];
 export default trabajos;
